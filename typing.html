@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="typing.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>TYPING TEST!</h1>
+      <div class="instr">
+        <p>Click on start to be shown a paragraph and then start typing in the given text area. You have a time of 1 minute.</p>
+        <button type="button" id="start">START</button>
+      </div>
+      <div class="timer">
+          Time Left :
+          <input id="minutes" type="text"><font size="5"> :
+                          </font>
+          <input id="seconds" type="text">
+      </div>
+      <div class="paragraph">
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat repellat dolores nulla inventore vero reiciendis sint, deserunt quae tempore dolore excepturi assumenda nesciunt reprehenderit dolor iusto consequatur, dolorum saepe! Aliquid!</p>
+      </div>
+      <div class="response">
+        <form class="response" action="index.html" method="post">
+          <textarea name="name" rows="8" cols="80"></textarea>
+          <button type="button" id="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+    <script src="typing.js" charset="utf-8"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" charset="utf-8"></script> -->
+  </body>
+</html>

@@ -1,0 +1,23 @@
+#minutes{
+  width: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+#seconds{
+  width: 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+h1{
+  text-align: center;
+}
+.timer{
+  text-align: center;
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 3px;
+}

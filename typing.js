@@ -64,28 +64,33 @@ var i=0;
 
 var total = para.length;
 //
-// $(document).keydown(function(e){
-//   pressed = e.which;
-// })
-//
-// while(para.charAt(i) != '\0'){
-//   if(pressed != para.charCodeAt(i)){
-//     mistakes++;
-//     i++;
-//   }
-// }
-
-// var sentence = 'The quick brown fox jumps over the lazy dog.';
-
-var index = 4;
-while(para.charAt(i) != '\0'){
-  console.log("good");
+$(document).keydown(function(e){
+  pressed = e.which;
+  while(para.charAt(i)){
+  if(pressed != para.charCodeAt(i)){
+    mistakes++;
+    i++;
+  }
 }
 
+
+/* 
+while(para.charAt(i) != '\0'){
+  console.log("good");
+} */
+var index = 4;
 console.log('The character code ' + para.charCodeAt(index) + ' is equal to ' + para.charAt(index));
 
 score = total - mistakes;
 var submit = document.getElementById("submit");
 $(submit).click(function(){
   alert("your score is "+score);
-})
+  console.log('hi');
+
+});
+});
+
+
+
+// var sentence = 'The quick brown fox jumps over the lazy dog.';
+
